@@ -1,0 +1,61 @@
+{
+    "name": "react-hook-form-kit",
+    "version": "1.0.0",
+    "description": "Typed, dynamic form component system using React and react-hook-form",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "keywords": [
+        "react",
+        "react-hook-form",
+        "form",
+        "typescript",
+        "form-component",
+        "form-builder",
+        "react-component",
+        "validation"
+    ],
+    "author": "Talha Nazir",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/talhanr/react-hook-form-kit.git"
+    },
+    "bugs": {
+        "url": "https://github.com/talhanr/react-hook-form-kit/issues"
+    },
+    "homepage": "https://github.com/talhanr/react-hook-form-kit#readme",
+    "scripts": {
+        "build:types": "dts-bundle-generator -o dist/index.d.ts src/index.ts",
+        "build:js": "tsup src/index.ts --format esm,cjs --minify",
+        "build:clean": "find dist -type f -name '*.d.ts' ! -name 'index.d.ts' -delete",
+        "build": "tsc && npm run build:js && npm run build:types && npm run build:clean",
+        "dev": "vite --config development/vite.config.ts",
+        "preview": "vite preview --config development/vite.config.ts"
+    },
+    "peerDependencies": {
+        "react": ">=17.0.0 <19.0.0",
+        "react-dom": ">=17.0.0 <19.0.0",
+        "react-hook-form": "^7.0.0"
+    },
+    "devDependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "react-hook-form": "^7.0.0",
+        "yup": "^1.0.2",
+        "@hookform/resolvers": "^3.0.0",
+        "vite": "^6.3.2",
+        "@vitejs/plugin-react": "^4.4.1",
+        "tsup": "^7.0.0",
+        "typescript": "^5.0.0",
+        "@types/node": "^22.14.1",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "dts-bundle-generator": "^9.5.1"
+    }
+}
