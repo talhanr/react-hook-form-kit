@@ -1,4 +1,3 @@
-export * from "./components";
+export { Form } from "./form/form";
 export { Field } from "./enums";
-export * from "./types";
-export * from "./utils";
+export type { FormField } from "./types/form";

@@ -1,4 +1,4 @@
-import { DivFieldProps } from "@/types";
+import { DivFieldProps } from "../../../types";
 import { RenderField } from "../../render-field";
 
 export const DivField = ({ props, children }: DivFieldProps) => {

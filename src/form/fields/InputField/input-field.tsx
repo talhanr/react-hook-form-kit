@@ -1,7 +1,7 @@
 import React from "react";
 import { Controller, useFormContext } from "react-hook-form";
-import { InputFieldProps } from "@/types";
-import { combineClasses } from "@/utils";
+import { InputFieldProps } from "../../../types";
+import { combineClasses } from "../../../utils";
 import { Error } from "../../error";
 
 export const InputField = React.forwardRef<HTMLInputElement, InputFieldProps>(

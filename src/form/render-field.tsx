@@ -1,6 +1,6 @@
-import { FormField } from "@/types";
+import { FormField } from "../types";
 import { combineClasses } from "../utils/utils";
-import { renderField } from "@/utils";
+import { renderField } from "../utils";
 
 export const RenderField = ({ field, containerClass, label }: FormField) => {
   const containerClasses = combineClasses("", containerClass);

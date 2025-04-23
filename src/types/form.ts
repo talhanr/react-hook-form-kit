@@ -1,6 +1,6 @@
 import { FieldValues, SubmitHandler, UseFormReturn } from "react-hook-form";
 import { AnyObjectSchema, InferType, ISchema } from "yup";
-import { Field } from "@/enums";
+import { Field } from "../enums";
 import React, { JSX } from "react";
 import {
   ButtonFieldProps,
@@ -8,7 +8,7 @@ import {
   FieldProps,
   InputFieldProps,
   LabelProps,
-} from "@/fields";
+} from ".";
 
 export interface FormField {
   containerClass?: string;

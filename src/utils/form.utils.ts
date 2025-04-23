@@ -1,6 +1,6 @@
-import { FieldComponent } from "@/components";
-import { Field } from "@/enums";
-import { FieldType, FormField } from "@/types";
+import { FieldComponent } from "../form";
+import { Field } from "../enums";
+import { FieldType, FormField } from "../types";
 
 function isFieldType(type: any): type is FieldType {
   return [Field.Input, Field.Button, Field.Div].includes(type);

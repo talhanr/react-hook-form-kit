@@ -1,4 +1,4 @@
-import { FieldComponents, FieldProps, FieldType } from "@/types";
+import { FieldComponents, FieldProps, FieldType } from "../types";
 import { ButtonField, DivField, InputField } from "./fields";
 
 const fieldComponents: FieldComponents = {
