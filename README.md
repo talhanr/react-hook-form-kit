@@ -138,15 +138,13 @@ npm run dev
 The project is organized as follows:
 
 ```
-├── src/                    # Core source code
-│   ├── components/          # Core form components
+├── src/                     # Core source code
+│   ├── form/                # Core form components
 │   ├── enums/               # Enum definitions
 │   ├── hooks/               # Custom hooks
 │   ├── plugins/             # Plugin system for custom fields
 │   ├── types/               # TypeScript type definitions
 │   ├── utils/               # Utility functions
-├── development/             # Playground for development
-├── dist/                    # Compiled output
 ├── LICENSE                  # License file
 ├── package.json             # Project metadata and scripts
 ├── README.md                # Documentation

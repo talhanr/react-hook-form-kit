@@ -26,7 +26,7 @@ export interface ButtonFieldProps extends BaseFieldProps<Field.Button> {
   text: string;
 }
 export interface DivFieldProps extends BaseFieldProps<Field.Div> {
-  props: NativeDivProps;
+  props?: NativeDivProps;
   children?: FormField[];
 }
 

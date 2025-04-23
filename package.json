@@ -5,9 +5,16 @@
     "author": "Talha Nazir",
     "license": "MIT",
     "homepage": "https://github.com/talhanr/react-hook-form-kit#readme",
-    "main": "dist/index.cjs.js",
-    "module": "dist/index.esm.js",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.mjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
     "files": [
         "dist",
         "README.md",
@@ -38,7 +45,7 @@
         "url": "https://github.com/talhanr/react-hook-form-kit/issues"
     },
     "scripts": {
-        "build": "tsup",
+        "build": "tsup && rm dist/*.d.mts",
         "typecheck": "tsc --noEmit",
         "dev": "vite --config development/vite.config.ts",
         "preview": "vite preview --config development/vite.config.ts"
@@ -60,13 +67,6 @@
         "tsup": "^7.0.0",
         "vite": "^6.3.2",
         "yup": "^1.0.2"
-    },
-    "exports": {
-        ".": {
-            "import": "./dist/index.esm.js",
-            "require": "./dist/index.cjs.js",
-            "types": "./dist/index.d.ts"
-        }
     },
     "sideEffects": false
 }
